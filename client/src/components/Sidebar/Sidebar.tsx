@@ -1,10 +1,11 @@
-import { Stack, Box, useMediaQuery, useTheme } from "@mui/material";
+import { Stack, Box,} from "@mui/material";
 import SideSearchBar from "./SideSearchbar";
 import ProfileBar from "./ProfileBar";
+import useBreakpointQuery from "hooks/useBreakpointQuery";
 
 export default function Sidebar() {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
+  const isMobile = useBreakpointQuery("down", "sm");
   return (
     <Box
       sx={{
