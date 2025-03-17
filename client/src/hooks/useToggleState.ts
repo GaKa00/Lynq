@@ -6,6 +6,5 @@ export function useToggleState(initialState: boolean): [boolean, () => void] {
     const toggle = () => {
         setState(!state);
     };
-    
     return [state, toggle];
     }

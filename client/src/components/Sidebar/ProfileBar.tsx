@@ -1,5 +1,4 @@
-import { Box, Stack, Avatar, IconButton, Tooltip, Typography } from "@mui/material";
-import { Circle, Mic, Videocam, Settings } from "@mui/icons-material";
+import { Box, Stack, Avatar, Typography } from "@mui/material";
 import Status from "./Status";
 import SettingsMenu from "./Settings";
 
