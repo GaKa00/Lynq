@@ -1,7 +1,9 @@
+import { Box } from "@mui/material";
+
 export default function SideSearchBar() {
     return (
-      <div>
-        <h1>Search Bar</h1>
-      </div>
+      <Box>
+        {/* Add your search bar here */}
+      </Box>
     );
   }
