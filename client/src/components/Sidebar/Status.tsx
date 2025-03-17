@@ -1,5 +1,6 @@
 import { Circle, Check } from "@mui/icons-material";
 import { Popover, Stack, Typography, Box, useTheme, useMediaQuery } from "@mui/material";
+import useBreakpointQuery from "hooks/useBreakpointQuery";
 import { useToggleState } from "hooks/useToggleState";
 import { useRef, useState } from "react";
 
@@ -13,8 +14,8 @@ export default function Status() {
   const status = ["Online", "Away", "Busy", "Offline", "Invisible"];
   const statusColor = ["green", "yellow", "red", "darkgray", "black"];
   const anchorRef = useRef(null);
-  const theme = useTheme();
-    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  
+    const isMobile = useBreakpointQuery("down", "sm");
 
   return (
     <>
