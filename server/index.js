@@ -2,7 +2,7 @@ const { Server } = require("socket.io");
 
 const io = new Server({
   cors: {
-    origin: "http://localhost:3000" // or your frontend url
+    origin: "http://localhost:5050" // or your frontend url
   }
 });
 
